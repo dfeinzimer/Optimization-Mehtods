@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\graphicspath{ {images/} }
+
+\title{Math 150A Optimization Writing Project}
+\author{David Feinzimer}
+\date{June 25, 2017}
+
+\begin{document}
+
+\maketitle
+
+\section{Description of Problem: The Least Expensive Path (Quickest Path)}
+
+\begin{wrapfigure}{l}{0.25\textwidth}
+    \centering
+    \includegraphics[width=0.25\textwidth]{title}
+\end{wrapfigure}
+
+Our problem is that with a limited amount of time we must run across campus to reach class.
+Our destination is 1,000 feet south and 200 feet east of our current location.
+When traveling southbound we can move at a rate of 10 feet per second.
+When traveling eastbound we can move at a rate of 3 feet per second.
+We have about four different paths to choose from but only one path with allow for the shortest trip to reach class.
+
+Path 1 would first take us 1,000 feet southbound at 10 feet per second. However, we'd still need to travel 200 feet eastbound ultimately making this a costly option.
+
+Path 2 would first take us 200 feet eastbound at 3 feet per second. However, we'd still need to travel 1,000 southbound through the quad at the equally slow speed of 3 feet per second making this path even more costly than path 1.
+
+Path 3 would take us directly towards the classroom (as the bird flys) on a southeastern path at a slow rate of 3 feet per second but there would be no need to travel directly southbound followed by directly eastbound or vice versa.
+
+A fourth (4) and final path would take us on a mixture of a pure southbound 10 foot per second stint followed by a slower 3 foot per second southeaster stint.
+
+In the end, path 4 would be the best route to take. The rest of this paper will explain why that is and how I arrived at this conclusion.
+
+\section{Theory And Process To Be Followed}
+
+Modern day GPS systems and way-finding software specialize in solving this exact type of problem. The following is a description of the almost certain method these systems follow in order to deliver the most direct and efficient directions to their client's everyday.
+
+While these advanced systems need to deal with real time data like constantly changing traffic patterns, our instance of this problem is a bit simpler as we have defined rates of speed that will not dynamically and constantly change on us.
+
+Step 1) \t I will recognize, process, and give a label to all of the information that has been provided.
+
+Step 2) \t I will recognized and explain the different relevant equations and their derivatives that will allow us to land at a correct answer. In this case I want to minimize time spent traveling to my class in McCarthy Hall.
+
+Step 3) \t I will show all of the work involved in solving this specific way-finding problem.
+
+\section{Processing \& Labeling Given Data}
+
+In solving this problem it will help us to analyze and label our data as if we were looking at it on an X/Y coordinate plane.
+From the problem, we are told we need to travel 1,000 feet south. Due to the face that the Y-axis traditionally runs north/south I will officially recognize our starting point as 'S', an intersect on the Y-axis at (0,1000).
+From the problem, we are also told we need to travel 200 feet east. Due to the face that the X-axis traditionally west/east I will recognize our ending point or destination as 'D', an intersect on the X-axis at (200,0). 
+We are told a main walk-way runs north/south and allows travelers to move at a rate of 10 feet per second. Because the main walk-way runs north/south it lies along our Y-axis and because this is a rate of change on our Y-axis with respect to time we have $ \frac{dy}{dt} = 10\frac{ft}{sec} $ 
+A quad also lies between us and class allowing travelers to only move at a rate of 3 feet per second. Because we will be traveling diagonally through the quad with reference to the Pythagorean Theorem which will be used later on this is a rate of change on our Z-axis with respect to time we have $ \frac{dz}{dt} = 3\frac{ft}{sec} $ 
+
+\vspace{.5cm}
+Given all of the above information we have the following variables:
+
+\vspace{.25cm}
+S @ (0,1000)
+
+\vspace{.25cm}
+D @ (200,0)
+
+\vspace{.25cm}
+$ \frac{dy}{dt} = 10\frac{ft}{sec} $
+
+\vspace{.25cm}
+$ \frac{dz}{dt} = 3\frac{ft}{sec} $ 
+
+\section{Recognizing Relevant Equations}
+
+\end{document}
